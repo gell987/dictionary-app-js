@@ -1,0 +1,116 @@
+.container {
+  background-color: #ffffff;
+  width: 90vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 80px 50px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+  background: rgb(0, 0, 0);
+  size: 20em;
+  height: 38px;
+  width: 82px;
+  /* this is a green */
+}
+body {
+  background-color: black;
+}
+
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Droid+Serif|Playfair+Display|Open+Sans+Condensed:300);
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "EB Garamond";
+  font-size: 32px;
+  line-height: 1.4rem;
+  height: 100%;
+  padding: 0.5rem;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-kerning: normal;
+  color: #1a222f;
+  background: #f4fff3;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+.quote {
+  position: relative;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.5rem;
+
+  &:before {
+    content: "“";
+    position: absolute;
+    left: -0.7em;
+  }
+
+  &:after {
+    content: "”";
+    margin-right: -1rem;
+  }
+}
+
+.quote--container {
+  margin: 4.5rem auto 0;
+  width: 17em;
+  border-bottom: 2px dotted #c6d1bf;
+  padding-bottom: 0.5rem;
+}
+
+.quote--highlight {
+  color: #d24335;
+}
+
+.quote--author {
+  font-family: "Open Sans Condensed";
+  font-size: 0.8rem;
+  text-align: right;
+  font-weight: 300;
+}
+
+.word {
+  font-size: 2.5em;
+}
+.word-meaning {
+  line-height: 1.4em;
+  color: darkgrey;
+  font-size: 23px;
+}
+
+.word-example {
+  line-height: 1.4em;
+  color: darkgrey;
+  font-size: 23px;
+}
+
+
+.search-box input{
+  height: 44px;
+  width: 265px;
+}
