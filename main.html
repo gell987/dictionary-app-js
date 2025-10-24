@@ -4,22 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dictionary app</title>
+    <title>Ultimate Word Lookup - Comprehensive Dictionary</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="app-header">
+        <h1 class="app-title">Ultimate Word Lookup</h1>
+        <p class="app-subtitle">Multi-Source Comprehensive Word Analysis</p>
+    </div>
+
     <div class="container">
         <div class="search-box">
             <input
                 type="text"
-                placeholder="Type the word here.."
+                placeholder="Enter any word for comprehensive analysis..."
                 id="inp-word"
+                autocomplete="off"
+                spellcheck="true"
             />
-            <button id="search-btn" class="button-success">Search</button>
+            <button id="search-btn" class="search-button">
+                <span class="btn-text">Analyze Word</span>
+            </button>
         </div>
-        <div class="result" id="result" class="quote--author"></div>
+
+        <div class="result" id="result">
+            <div class="welcome-message">
+                <h2>🔍 Enter a word to discover:</h2>
+                <ul class="feature-list">
+                    <li>✓ Complete definitions from multiple sources</li>
+                    <li>✓ Pronunciation with audio playback</li>
+                    <li>✓ Etymology and word origins</li>
+                    <li>✓ Comprehensive synonyms and antonyms</li>
+                    <li>✓ Related words and concepts</li>
+                    <li>✓ Rhymes and similar-sounding words</li>
+                    <li>✓ Usage frequency analysis</li>
+                    <li>✓ Real-world example sentences</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
